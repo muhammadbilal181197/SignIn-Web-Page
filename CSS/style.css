@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    /* background-color: #093545; */
+    background-image: url('../Image/Login\ Page\ task\ 2.svg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Light/Dark Mode */
+
+.modevector {
+
+    position: absolute;
+    width: 100px;
+    top: 90%;
+    left: 30px;
+
+}
+
+/* Hero Conatiner CSS all data is inside this conatiner */
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: -100px;
+}
+
+/* container heading and tagline */
+.container__1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* login container */
+.container__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Container forgot */
+.container__forgot{
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container */
+/* .container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    min-width: 550px;
+    max-width: 100%;
+    height: 660px;
+    
+    margin: 40px auto;
+
+} */
+
+/*Form Heading  */
+.form-heading {
+    margin-top: 100px;
+    max-width: 100%;
+    min-width: 230px;
+    height: 80px;
+   
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+/* Form Tagline */
+.form-tagline {
+    margin-top: 45px;
+    min-width: 370px;
+    max-width: 100%;
+    height: 20px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* Username Section */
+.username-tag {
+    margin-top: 45px;
+    max-width: 100%;
+    min-width: 300px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding-left: 20px;
+    background: #224957;
+    border: none;
+}
+
+
+/* Password Section */
+.password-tag {
+
+    margin-top: 35px;
+    max-width: 100%;
+
+    min-width: 300px;
+    height: 45px;
+     border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding-left: 20px;
+    background: #224957;
+    border: none;
+}
+
+::placeholder {
+
+
+    color: #ffffff;
+    opacity: 1;
+    font-size: larger;
+
+}
+
+/* Remember me Tag */
+
+.forgot-setion {
+    max-width: 100%;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #224957;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+label {
+
+
+    margin-right: 35px;
+    margin-left: 5px;
+    min-width: 110px;
+    max-width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+
+
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f00c";
+    font-size: 15px;
+    color: azure;
+    display: none;
+
+}
+
+input[type="checkbox"]:hover {
+    background-color: #38697a;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #224957;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+/* Forgot Password Tag */
+
+.text {
+
+
+    min-width: 128px;
+    max-width: 100%;
+    height: 17px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #20DF7F;
+}
+
+.text:hover {
+    cursor: pointer;
+    text-decoration-color: #20DF7F;
+    text-decoration: underline;
+}
+
+/* Login Button */
+
+.login-rectangle {
+
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 300px;
+    max-width: 100%;
+    height: 45px;
+    background: #20DF7F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.text-login {
+
+    min-width: 44px;
+    max-width: 100%;
+    height: 20px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    align-self: center;
+}
+
+.text-login:hover {
+    color: #224957;
+}
+
+.login-rectangle:hover {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #0cc769;
+    transition: 0.5s;
+}
